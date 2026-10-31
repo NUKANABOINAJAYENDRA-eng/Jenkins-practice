@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'Agent-kp83'
+    }
     stages {
         stage('build') {
             steps {
