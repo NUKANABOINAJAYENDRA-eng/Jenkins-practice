@@ -2,7 +2,9 @@ pipeline {
     agent {
         label 'jen'
     }
-    
+     options {
+                timeout(time: 30, unit: 'MINUTES')
+     }
     stages {
         stage('build') {
             steps {
