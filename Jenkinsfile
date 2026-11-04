@@ -46,7 +46,7 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
                 echo "triggered"
-                error 'some failure'
+                
             }
         }
     }
