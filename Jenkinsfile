@@ -1,5 +1,7 @@
 pipeline {
     agent any {
+        
+    }
     #agent {
         #label 'jen'
     #}
@@ -62,6 +64,6 @@ pipeline {
             echo 'i will run when pipeline is failure'
         }
     }
-    }
+    
 }
 
