@@ -1,7 +1,8 @@
 pipeline {
-    agent {
+    agent any {
+    #agent {
         #label 'jen'
-    }
+    #}
          options {
                 timeout(time: 30, unit: 'MINUTES')
                 disableConcurrentBuilds() 
@@ -61,4 +62,6 @@ pipeline {
             echo 'i will run when pipeline is failure'
         }
     }
+    }
 }
+
